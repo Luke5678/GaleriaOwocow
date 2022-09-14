@@ -1,0 +1,32 @@
+﻿<Window x:Class="GaleriaOwocow.Windows.ViewFruitWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GaleriaOwocow"
+        mc:Ignorable="d"
+        Title="Szczegóły" Height="450" Width="800">
+    <Grid>
+        <Button Content="Zamknij" HorizontalAlignment="Left" Padding="3,0" Margin="10" VerticalAlignment="Bottom" 
+                Click="Button_Click"/>
+
+        <Label x:Name="Name" Content="Jabłko" HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Top" 
+               FontSize="24" FontWeight="Bold"/>
+
+        <Grid Width="300" Margin="10,67,0,35" HorizontalAlignment="Left">
+            <Border BorderThickness="1" BorderBrush="#FF000000" VerticalAlignment="Top">
+                <Image x:Name="Image" Source="D:\kiwi.jpg" Width="300" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            </Border>
+        </Grid>
+
+        <TextBlock Text="Kolor:" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" 
+                   Margin="315,67,0,0"/>
+        <TextBlock x:Name="Color" Text="Czerwony" HorizontalAlignment="Left" Margin="354,67,0,0" 
+                   VerticalAlignment="Top" Width="436"/>
+
+        <TextBlock Text="Opis:" HorizontalAlignment="Left" Margin="315,88,0,0" VerticalAlignment="Top" 
+                   FontWeight="Bold"/>
+        <TextBlock x:Name="Description" Text="Opis" HorizontalAlignment="Left" Margin="354,88,0,0" 
+                   VerticalAlignment="Top" Height="336" Width="436" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
